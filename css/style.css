@@ -1,0 +1,308 @@
+body {
+		background-color: #E7E6E2;
+	}
+
+	ul, ol {
+    
+	}
+
+	.container {
+		padding: 40px;
+	}
+
+	.game-background {
+		height: 450px;
+		width: 450px;
+		border-radius: 50%;
+		background-color: #383435;
+		margin: 0 auto;
+		box-shadow: 10px 10px 10px #888888;
+	}
+
+	.game-colors {
+		height: 390px;
+	    left: 0;
+	    margin: 0 auto;
+	    position: relative;
+	    top: 7%;
+	    width: 390px;
+}
+
+	.quarter {
+   		height: 48%;
+    	position: absolute;
+    	transition: background-color 0.2s ease-in-out 0s;
+    	width: 48%;
+}
+
+	.turned-off {
+		opacity: 0.7;
+	}
+
+	.red {
+  		top: 0;
+  		left: 0;
+  		background-color: red;
+  		border-radius: 100% 0 0 0;
+  		
+  		transition: all 0.2s;
+}
+
+	.red-active {
+		opacity: 1;
+	}
+
+	.blue {
+	  top: 0;
+	  right: 0;
+	  background-color: blue;
+	  border-radius: 0 100% 0 0;
+	  
+	}
+
+	.blue-active {
+		opacity: 1;
+	}
+
+	.orange {
+	  bottom: 0;
+	  left: 0;
+	  background-color: orange;
+	  border-radius: 0 0 0 100%;
+	  
+	}
+
+	.orange-active {
+		opacity: 1;
+	}
+	.green {
+	  bottom: 0;
+	  right: 0;
+	  background-color: green;
+	  border-radius: 0 0 100% 0;
+	  
+	}
+
+	.green-active {		
+		opacity: 1;
+	}
+
+	.cutout {
+	      background-color: white;
+    border: 12px solid #383435;
+    border-radius: 50%;
+    font-family: "Viga",sans-serif;
+    font-size: 50px;
+    height: 60%;
+    left: 20%;
+    padding-top: 40px;
+    
+    position: relative;
+    text-align: center;
+    top: 20%;
+    width: 60%;
+	}
+
+	.count, .start-button, .strict-button{
+		font-size: 10px;
+		font-weight: lighter;
+	}
+
+	.count {
+
+	}
+
+	.start-button {
+		padding-top: 15px;
+	}
+
+	.strict-button{
+		padding-top: 2px;
+	}
+
+	.start-button, .strict-button{
+		margin-left: 13px;
+	}
+
+	.game-buttons {
+		list-style-type: none;
+		margin:0 auto;
+	}
+
+	.game-buttons li{
+		display: inline;
+  		list-style-type: none;
+  		float: left;
+	}
+
+	.counter-display {
+		height: 40px;
+		width: 40px;
+		background-color: #32050C;
+		border: 3px solid #383435;
+		border-radius: 4px;
+		padding: 2px;
+		font-size: 20px;
+	}
+
+	#start-btn {
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		border: 3px solid #383435;
+		background-color: red;
+		margin: 0 auto;
+		cursor: pointer;
+		box-shadow: 1px 2px 2px #888888;
+		-webkit-transition: all 0.1s;
+		-moz-transition: all 0.1s;
+		transition: all 0.1s;
+	}
+
+	#start-btn:active {
+		position:relative;
+		box-shadow: none;
+	    top:1px;
+	}
+
+	.strict-btn-LED {
+		height: 8px;
+		width: 8px;
+		background-color: #42050C;
+		border: 2px solid #383435 ;
+		border-radius: 50%;
+		margin: 0 auto 5px;
+	}
+
+	.strict-btn-LED-active {
+		background-color: red;
+	}
+
+	.strict-btn {
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		border: 3px solid #383435;
+		background-color: yellow;
+		margin: 0 auto;
+		cursor: pointer;
+		box-shadow: 1px 2px 2px #888888;
+		-webkit-transition: all 0.1s;
+		-moz-transition: all 0.1s;
+		transition: all 0.1s;
+	}
+
+	.strict-btn:active {
+		position:relative;
+		box-shadow: none;
+	    top:1px;
+	}
+
+	.switch-bg {
+		margin: 70px auto 0;
+		position: relative;
+		background-color: #383435;
+		height: 20px;
+		width: 60px;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+
+	.switch {
+		background-color: red;
+    	border: 2px solid #403747;
+    	border-radius: 2px;
+    	height: 20px;
+    	position: relative;
+    	width: 30px;
+    	-webkit-transition: float 0.3s linear;
+  		transition: float 0.3s linear;
+  		font-size: 10px;
+	}
+
+	.switch-active {
+		float: right;
+		background-color: green;
+
+	}
+
+	.running {
+		pointer-events: none; 
+	}
+
+	@media screen and (max-width: 670px) {
+
+	.game-background {
+		height: 300px;
+		width: 300px;
+	}
+
+	.game-colors {
+    	height: 260px;
+    	width: 260px;
+	}
+
+	.cutout {
+		font-size: 30px;
+		padding-top: 28px;
+	}
+
+	.count {
+    	margin-left: -20px;
+    	margin-top: -5px;
+	}
+
+	.count, .start-button, .strict-button{
+		font-size: 8px;
+		
+	}
+
+	.counter-display {
+	    font-size: 10px;
+	    height: 30px;
+	    padding: 5px;
+	    width: 30px;
+	}
+
+	.start-button, .strict-button {
+    	margin-left: 7px;
+
+	}
+
+	.start-button {
+		padding-top: 7px;
+	}
+
+	#start-btn {
+	    height: 18px;
+	    width: 18px;
+
+	}
+
+	.strict-button {
+ 	   margin-top: -5px;
+
+	}
+
+	.strict-btn-LED {
+    	margin: 0 auto 2px;
+	}
+
+	.strict-btn {
+    	height: 18px;
+    	width: 18px;
+	}
+
+	.switch-bg {
+		top: -30px;
+		height: 15px;
+		width: 40px;
+	}
+
+	.switch {
+		font-size: 8px;
+    	height: 15px;
+    	width: 20px;
+	}
+
+	}
